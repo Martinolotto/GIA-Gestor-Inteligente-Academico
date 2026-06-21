@@ -43,4 +43,6 @@ export const TableInstitucion = sequelize.define("institucion",{
         allowNull: false,
         defaultValue: 'pendiente'
     }
+},       {
+        tableName: "institucion"
 })
