@@ -7,6 +7,7 @@ import sequelize from "./src/config/database.js";
 
 //routers
 import { userRouter } from "./src/routers/usuarioRouter.js";
+import { RouterInstitucion } from "./src/routers/institucionRouter.js";
 
 //tablas
 import { TableInstitucion } from "./src/models/institucion.js";
@@ -34,6 +35,7 @@ const conexionBD = async () => {
 conexionBD();
 
 server.use('/usuarios', userRouter);
+server.use("/instituciones", RouterInstitucion)
 
 server.listen(PORT, () => {
   console.log(`server prendido en elpuerto ${PORT}`);
