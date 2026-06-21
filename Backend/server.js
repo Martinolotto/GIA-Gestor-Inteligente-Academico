@@ -4,6 +4,7 @@
 
 import express from 'express';
 import sequelize from './src/config/database.js';
+import { TableInstitucion } from './src/models/institucion.js';
 const server = express();
 
 const PORT = 3000;
@@ -11,15 +12,19 @@ server.use(express.json())
 
 const conexionBD = async ()=>{
     try {
-        const verificacion = await sequelize.authenticate();
-        console.log(verificacion);
+        await sequelize.authenticate();
         console.log('Conexión a la BD exitosa');
+
+        await sequelize.sync()
+        console.log('Tablas creadas');
     } catch (error) {
         console.log('Error:', error.message);
     }
 }
 
 conexionBD()
+
+//tablas de datos
 
 server.listen(PORT, ()=>{
     console.log(`server prendido en elpuerto ${PORT}`);
