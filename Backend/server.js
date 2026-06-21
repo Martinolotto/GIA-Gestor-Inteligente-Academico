@@ -7,6 +7,7 @@ import sequelize from "./src/config/database.js";
 import { TableInstitucion } from "./src/models/institucion.js";
 import { TableAdministrador } from "./src/models/administrador.js";
 import { TableUsarios } from "./src/models/usuario.js";
+import { TableRepresentante } from "./src/models/representante.js";
 
 const server = express();
 
