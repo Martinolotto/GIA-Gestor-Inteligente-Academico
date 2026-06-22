@@ -17,6 +17,7 @@ import { TableAdministrador } from "./src/models/administrador.js";
 import { TableUsarios } from "./src/models/usuario.js";
 import { TableRepresentante } from "./src/models/representante.js";
 import './src/models/index.js';
+import { RouterRepresentante } from "./src/routers/representanteRouter.js";
 
 
 
@@ -41,6 +42,7 @@ conexionBD();
 server.use('/usuarios', userRouter);
 server.use("/instituciones", RouterInstitucion);
 server.use("/admin", RouterAdminstradores);
+server.use("/representante", RouterRepresentante)
 
 server.listen(PORT, () => {
   console.log(`server prendido en elpuerto ${PORT}`);
