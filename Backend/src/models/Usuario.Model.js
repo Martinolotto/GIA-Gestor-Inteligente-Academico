@@ -4,13 +4,6 @@ import { DataTypes } from "sequelize";
 export const TableUsarios = sequelize.define(
   "usuario",
   {
-    id: {
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-      unique: true,
-      type: DataTypes.INTEGER,
-    },
     role: {
       type: DataTypes.ENUM("administrador", "representante"),
       allowNull: false,

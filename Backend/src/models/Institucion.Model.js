@@ -2,12 +2,6 @@ import { DataTypes} from "sequelize";
 import sequelize from "../config/DataBase.js";
 
 export const TableInstitucion = sequelize.define("institucion",{
-    id:{
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false
-    },
     nombre_institucion: {
         type: DataTypes.STRING,
         allowNull: false,

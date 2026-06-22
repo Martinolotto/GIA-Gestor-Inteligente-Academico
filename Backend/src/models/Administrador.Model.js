@@ -4,12 +4,6 @@ import { DataTypes } from "sequelize";
 export const TableAdministrador = sequelize.define(
   "administrador",
   {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true,
-      allowNull: false,
-    },
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,

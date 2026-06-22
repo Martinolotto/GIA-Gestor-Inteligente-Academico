@@ -2,12 +2,6 @@ import sequelize from "../config/DataBase.js";
 import { DataTypes } from "sequelize";
 
 export const TableRepresentante = sequelize.define("representante", {
-    id: {
-        primaryKey: true,
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        allowNull: false,
-    },
     nombre: {
         type: DataTypes.STRING,
         allowNull: false,
