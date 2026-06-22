@@ -1,5 +1,5 @@
 import { Router } from "express"; 
-import { obtenerAdministradores, registrarAdministrador } from "../controllers/administracion.controller.js"; 
+import { obtenerAdministradores, registrarAdministrador } from "../controllers/Administracion.Controller.js"; 
 
 export const RouterAdminstradores = Router();
 

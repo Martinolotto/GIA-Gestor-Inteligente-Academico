@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { cargarDatos, editarEstado, obtenerinstituciones } from "../controllers/institucion.controller.js";
+import { cargarDatos, editarEstado, obtenerinstituciones } from "../controllers/Institucion.Controller.js";
 
 export const RouterInstitucion = Router();
 

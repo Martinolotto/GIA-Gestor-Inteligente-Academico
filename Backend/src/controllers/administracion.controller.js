@@ -1,4 +1,4 @@
-import { TableAdministrador } from "../models/administrador.js";
+import { TableAdministrador } from "../models/Administrador.Model.js";
 
 let errorMessage = {
     message: "ocurrio un error intentalo nuevamente"

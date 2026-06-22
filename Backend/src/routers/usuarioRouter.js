@@ -1,7 +1,7 @@
 //user router
 
 import { Router } from "express";
-import {obtnerUsuario, registrarUsuario, userSesion} from "../controllers/usuario.controller.js";
+import {obtnerUsuario, registrarUsuario, userSesion} from "../controllers/Usuario.Controller.js";
 
 export const userRouter = Router();
 

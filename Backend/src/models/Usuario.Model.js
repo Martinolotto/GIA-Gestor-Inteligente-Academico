@@ -1,4 +1,4 @@
-import sequelize from "../config/database.js";
+import sequelize from "../config/DataBase.js";
 import { DataTypes } from "sequelize";
 
 export const TableUsarios = sequelize.define(

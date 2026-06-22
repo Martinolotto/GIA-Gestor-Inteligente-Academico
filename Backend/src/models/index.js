@@ -1,7 +1,7 @@
-import { TableAdministrador } from "./administrador.js";
-import { TableRepresentante } from "./representante.js";
-import { TableInstitucion } from "./institucion.js";
-import { TableUsarios } from "./usuario.js";
+import { TableAdministrador } from "./Administrador.Model.js";
+import { TableRepresentante } from "./Representante.Model.js";
+import { TableInstitucion } from "./Institucion.Model.js";
+import { TableUsarios } from "./Usuario.Model.js";
 
 TableUsarios.hasOne(TableAdministrador, { foreignKey: 'usuario_id' });
 TableAdministrador.belongsTo(TableUsarios, { foreignKey: 'usuario_id' });

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { obtenerRepresentantes, registrarRepresentante } from "../controllers/representante.controller.js";
+import { obtenerRepresentantes, registrarRepresentante } from "../controllers/Representante.Controller.js";
 
 export const RouterRepresentante = Router()
 
